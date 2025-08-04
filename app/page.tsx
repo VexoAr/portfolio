@@ -29,18 +29,18 @@ export default function Portfolio() {
           <div className="space-y-6">
             <div className="inline-block">
               <div className="relative px-3 py-1 text-sm font-medium rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4 mt-4">
-                <span className="relative z-10">Estudiante de Informatica</span>
+                <span className="relative z-10">Empresa de Software</span>
                 <span className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 animate-pulse"></span>
               </div>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-              <span className="block">Hola, soy</span>
+              <span className="block">Hola, somos</span>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
-                Tomas Ferrer
+                Vexo
               </span>
             </h1>
             <p className="text-xl text-zinc-400 max-w-[600px]">
-              Me dedico a diseñar y crear Webs y App para clientes
+              Nos dedicamos a crear sitios web modernos y funcionales, diseñados para destacar tu presencia en línea
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Link href="#projects">
@@ -56,12 +56,12 @@ export default function Portfolio() {
                   variant="outline"
                   className="border-zinc-700 text-pink-500 hover:text-pink-700 hover:border-zinc-500 bg-transparent"
                 >
-                  Contactame
+                  Contactanos
                 </Button>
               </Link>
             </div>
             <div className="flex gap-4 pt-4">
-              <Link href="https://github.com/ferrerthomas" target="_blank" rel="noopener noreferrer">
+              <Link href="https://github.com/vexoar" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -71,7 +71,7 @@ export default function Portfolio() {
                   <span className="sr-only">GitHub</span>
                 </Button>
               </Link>
-              <Link href="https://www.linkedin.com/in/tomasferrer/" target="_blank" rel="noopener noreferrer">
+              {/*<Link href="https://www.linkedin.com/in/tomasferrer/" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -80,8 +80,8 @@ export default function Portfolio() {
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
                 </Button>
-              </Link>
-              <Link href="mailto:tomasferrer_web@hotmail.com">
+              </Link>*/}
+              <Link href="mailto:vexo.contact.dev@gmail.com">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -91,6 +91,7 @@ export default function Portfolio() {
                   <span className="sr-only">Email</span>
                 </Button>
               </Link>
+              
               <Link href="https://wa.me/2355506234" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="ghost"
@@ -101,7 +102,7 @@ export default function Portfolio() {
                   <span className="sr-only">WhatsApp</span>
                 </Button>
               </Link>
-              <Link href="https://instagram.com/ferrer_tomas" target="_blank" rel="noopener noreferrer">
+              <Link href="https://instagram.com/vexo.ar" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="ghost"
                   size="icon"
@@ -133,147 +134,90 @@ export default function Portfolio() {
         </div>
 
         <div className="container relative z-10">
-          <SectionHeading title="Sobre mi" subtitle="¿Quien soy?" />
+          <SectionHeading title="Nuestro Equipo" subtitle="Conoce a los Fundadores" />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center mt-16">
-            {/* Tarjeta 1 */}
-            <div className="flex flex-col items-center space-y-6">
-              <div className="relative w-80 h-80 rounded-xl overflow-hidden border border-zinc-800">
-                <img
-                  src="/yo.png?height=400&width=400"
-                  alt="Tomas Ferrer"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 w-full p-2">
-                  <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
-                    <span className="text-xs font-medium">Disponible</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-16">
+            {/* Primer Integrante (Tomas) */}
+            <div className="space-y-6">
+              <div className="relative">
+                <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-xl opacity-70"></div>
+                <div className="relative aspect-square rounded-xl overflow-hidden border border-zinc-800">
+                  <img
+                    src="/tomi.png?height=600&width=600"
+                    alt="Tomas Ferrer"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 w-full p-6">
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
+                      <span className="text-sm font-medium">Disponible</span>
+                    </div>
                   </div>
                 </div>
               </div>
               <GlassmorphicCard>
-                <p className="text-lg text-zinc-300">
-                  Soy Tomas Ferrer
+                <h3 className="text-xl font-semibold mb-2">Tomas Ferrer</h3>
+                <p className="text-sm text-zinc-400">Co-Fundador y Desarrollador Web</p>
+                <p className="text-zinc-300 mt-4">
+                  Tomi es el cerebro detrás de la arquitectura y el desarrollo. Su pasión es convertir las ideas en sitios web funcionales y atractivos.
                 </p>
-                <p className="text-lg text-zinc-300 mt-4">
-                  Soy del interior de la provincia y actualmente estudiante de informática en la UNLP.
-                </p>
-                <p className="text-lg text-zinc-300 mt-4">
-                  Me dedico a crear webs para emprendimientos o empresas, cumpliendo objetivos como tiendas online o webs informativas.
-                </p>
-                <div className="grid grid-cols-2 gap-4 mt-8">
-                  <div className="space-y-1">
-                    <div className="text-sm text-zinc-500">Nombre</div>
-                    <div className="font-medium">Tomas Ferrer</div>
-                  </div>
-                  <div className="space-y-1">
-                    <div className="text-sm text-zinc-500">Email</div>
-                    <div className="font-medium">tomasferrer_web@hotmail.com</div>
-                  </div>
-                  <div className="space-y-1">
-                    <div className="text-sm text-zinc-500">Ubicación</div>
-                    <div className="font-medium">La Plata, Argentina</div>
-                  </div>
-                  <div className="space-y-1">
-                    <div className="text-sm text-zinc-500">Estado</div>
-                    <div className="font-medium text-green-500">Disponible</div>
-                  </div>
-                </div>
               </GlassmorphicCard>
             </div>
 
-            {/* Tarjeta 2 */}
-            <div className="flex flex-col items-center space-y-6">
-              <div className="relative w-80 h-80 rounded-xl overflow-hidden border border-zinc-800">
-                <img
-                  src="/mike.png?height=400&width=400"
-                  alt="Mike"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 w-full p-2">
-                  <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
-                    <span className="text-xs font-medium">Disponible</span>
+            {/* Segundo Integrante (Mike) */}
+            <div className="space-y-6">
+              <div className="relative">
+                <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-xl opacity-70"></div>
+                <div className="relative aspect-square rounded-xl overflow-hidden border border-zinc-800">
+                  <img
+                    src="/mike.png?height=600&width=600"
+                    alt="Michael Vasquez"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 w-full p-6">
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
+                      <span className="text-sm font-medium">Disponible</span>
+                    </div>
                   </div>
                 </div>
               </div>
               <GlassmorphicCard>
-                <p className="text-lg text-zinc-300">
-                  Soy Mike
+                <h3 className="text-xl font-semibold mb-2">Michael Vasquez</h3>
+                <p className="text-sm text-zinc-400">Co-Fundadora y Diseñadora UI/UX</p>
+                <p className="text-zinc-300 mt-4">
+                  Mike es el encargado de la experiencia de usuario y la estética visual de cada proyecto, garantizando interfaces intuitivas y un diseño impactante.
                 </p>
-                <p className="text-lg text-zinc-300 mt-4">
-                  Desarrollador Frontend apasionado por el diseño y la experiencia de usuario.
-                </p>
-                <p className="text-lg text-zinc-300 mt-4">
-                  Trabajo en proyectos modernos usando React y tecnologías web actuales.
-                </p>
-                <div className="grid grid-cols-2 gap-4 mt-8">
-                  <div className="space-y-1">
-                    <div className="text-sm text-zinc-500">Nombre</div>
-                    <div className="font-medium">Mike Johnson</div>
-                  </div>
-                  <div className="space-y-1">
-                    <div className="text-sm text-zinc-500">Email</div>
-                    <div className="font-medium">mike@email.com</div>
-                  </div>
-                  <div className="space-y-1">
-                    <div className="text-sm text-zinc-500">Ubicación</div>
-                    <div className="font-medium">Buenos Aires, Argentina</div>
-                  </div>
-                  <div className="space-y-1">
-                    <div className="text-sm text-zinc-500">Estado</div>
-                    <div className="font-medium text-green-500">Disponible</div>
-                  </div>
-                </div>
               </GlassmorphicCard>
             </div>
 
-            {/* Tarjeta 3 */}
-            <div className="flex flex-col items-center space-y-6">
-              <div className="relative w-80 h-80 rounded-xl overflow-hidden border border-zinc-800">
-                <img
-                  src="/jane.png?height=400&width=400"
-                  alt="Jane"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 w-full p-2">
-                  <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
-                    <span className="text-xs font-medium">Disponible</span>
+            {/* Tercer Integrante (Facu) */}
+            <div className="space-y-6">
+              <div className="relative">
+                <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-xl opacity-70"></div>
+                <div className="relative aspect-square rounded-xl overflow-hidden border border-zinc-800">
+                  <img
+                    src="/facu.png?height=600&width=600"
+                    alt="Facu Lambertucci"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 w-full p-6">
+                    <div className="flex items-center gap-2">
+                      <div className="w-3 h-3 rounded-full bg-yellow-500 animate-pulse"></div>
+                      <span className="text-sm font-medium">En Proyecto</span>
+                    </div>
                   </div>
                 </div>
               </div>
               <GlassmorphicCard>
-                <p className="text-lg text-zinc-300">
-                  Soy Jane
+                <h3 className="text-xl font-semibold mb-2">Facundo Lambertucci</h3>
+                <p className="text-sm text-zinc-400">Co-Fundador y Estratega Digital</p>
+                <p className="text-zinc-300 mt-4">
+                  Facu se enfoca en la estrategia digital, asegurando que cada sitio web no solo funcione, sino que también cumpla sus objetivos de negocio.
                 </p>
-                <p className="text-lg text-zinc-300 mt-4">
-                  Especialista en backend y bases de datos, enfocada en soluciones escalables y seguras.
-                </p>
-                <p className="text-lg text-zinc-300 mt-4">
-                  Me gusta automatizar procesos y optimizar el rendimiento de las aplicaciones.
-                </p>
-                <div className="grid grid-cols-2 gap-4 mt-8">
-                  <div className="space-y-1">
-                    <div className="text-sm text-zinc-500">Nombre</div>
-                    <div className="font-medium">Jane Doe</div>
-                  </div>
-                  <div className="space-y-1">
-                    <div className="text-sm text-zinc-500">Email</div>
-                    <div className="font-medium">jane@email.com</div>
-                  </div>
-                  <div className="space-y-1">
-                    <div className="text-sm text-zinc-500">Ubicación</div>
-                    <div className="font-medium">Rosario, Argentina</div>
-                  </div>
-                  <div className="space-y-1">
-                    <div className="text-sm text-zinc-500">Estado</div>
-                    <div className="font-medium text-green-500">Disponible</div>
-                  </div>
-                </div>
               </GlassmorphicCard>
             </div>
           </div>

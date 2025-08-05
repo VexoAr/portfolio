@@ -76,9 +76,9 @@ export function ContactForm() {
         <div className="absolute -inset-1 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl blur opacity-25 hover:opacity-100 transition duration-1000 hover:duration-200"></div>
 
         <div className="relative">
-          <h3 className="text-2xl font-bold mb-6">Dejame tu consulta</h3>
+          <h3 className="text-2xl font-bold mb-6">Dejanos tu consulta</h3>
 
-          <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+          <form ref={formRef} onSubmit={handleSubmit} className="space-y-3">
             <div className="space-y-2">
               <Input
                 name="from_name"

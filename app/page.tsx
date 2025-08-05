@@ -186,7 +186,7 @@ export default function Portfolio() {
               </div>
               <GlassmorphicCard>
                 <h3 className="text-xl font-semibold mb-2">Michael Vasquez</h3>
-                <p className="text-sm text-zinc-400">Co-Fundadora y Diseñadora UI/UX</p>
+                <p className="text-sm text-zinc-400">Co-Fundador y Diseñador UI/UX</p>
                 <p className="text-zinc-300 mt-4">
                   Mike es el encargado de la experiencia de usuario y la estética visual de cada proyecto, garantizando interfaces intuitivas y un diseño impactante.
                 </p>
@@ -206,8 +206,8 @@ export default function Portfolio() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 w-full p-6">
                     <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 rounded-full bg-yellow-500 animate-pulse"></div>
-                      <span className="text-sm font-medium">En Proyecto</span>
+                      <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
+                      <span className="text-sm font-medium">Disponible</span>
                     </div>
                   </div>
                 </div>
@@ -232,7 +232,7 @@ export default function Portfolio() {
         </div>
 
         <div className="container relative z-10">
-          <SectionHeading title="Mis Proyectos" subtitle="Algunos trabajos recientes" />
+          <SectionHeading title="Nuestros Proyectos" subtitle="Algunos trabajos recientes" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
             <ProjectCard
@@ -244,12 +244,12 @@ export default function Portfolio() {
               repoUrl="https://github.com/FerrerThomas/turnosBarberia"
             />
             <ProjectCard
-              title="Portfolio"
-              description="Web que estas viendo actualmente, diseñada para mostrar trabajos y conexion con api de mails"
+              title=""
+              description=""
               tags={["Next.js", "Node.js", "Tailwind CSS", "TypeScript"]}
-              image="/Porfolio.png?height=400&width=600"
-              demoUrl="https://portfolio-ft-tomas.vercel.app/"
-              repoUrl="https://github.com/FerrerThomas/portfolio"
+              image="/placeholder.svg?height=400&width=600"
+              demoUrl="https://example.com"
+              repoUrl="https://github.com"
             />
             <ProjectCard
               title="Tienda Suplmentos Deportivos"
@@ -323,25 +323,27 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <div className="text-sm text-zinc-500">Email</div>
-                    <div className="font-medium">tomasferrer_web@hotmail.com</div>
+                    <div className="font-medium">vexo.contact.dev@gmail.com</div>
                   </div>
                 </div>
-                <div className="flex items-center gap-4">
+
+                {/*<div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center">
                     <Linkedin className="h-5 w-5 text-purple-400" />
                   </div>
-                  <div>
+                  {/*<div>
                     <div className="text-sm text-zinc-500">LinkedIn</div>
                     <div className="font-medium">linkedin.com/in/tomasferrer</div>
                   </div>
-                </div>
+                </div>*/}
+
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center">
                     <Github className="h-5 w-5 text-purple-400" />
                   </div>
                   <div>
                     <div className="text-sm text-zinc-500">GitHub</div>
-                    <div className="font-medium">github.com/ferrerthomas</div>
+                    <div className="font-medium">github.com/vexoar</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -359,7 +361,7 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <div className="text-sm text-zinc-500">Instagram</div>
-                    <div className="font-medium">@ferrer_tomas</div>
+                    <div className="font-medium">@vexo.ar</div>
                   </div>
                 </div>
               </div>
@@ -382,15 +384,15 @@ export default function Portfolio() {
         <div className="container flex flex-col md:flex-row justify-between items-center gap-6">
           <div>
             <Link href="/" className="font-bold text-xl">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">Tomas</span>
-              <span className="text-white"> Ferrer</span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">Vexo</span>
+              <span className="text-white"> {/*Ferrer*/}</span>
             </Link>
             <p className="text-sm text-zinc-500 mt-2">
-              © {new Date().getFullYear()} Tomas Ferrer. All rights reserved.
+              © {new Date().getFullYear()} Vexo. All rights reserved.
             </p>
           </div>
           <div className="flex gap-4">
-            <Link href="https://github.com/tomasferrer" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/vexoar" target="_blank" rel="noopener noreferrer">
               <Button
                 variant="ghost"
                 size="icon"
@@ -400,7 +402,7 @@ export default function Portfolio() {
                 <span className="sr-only">GitHub</span>
               </Button>
             </Link>
-            <Link href="https://www.linkedin.com/in/tomasferrer/" target="_blank" rel="noopener noreferrer">
+            {/*<Link href="https://www.linkedin.com/in/tomasferrer/" target="_blank" rel="noopener noreferrer">
               <Button
                 variant="ghost"
                 size="icon"
@@ -409,8 +411,8 @@ export default function Portfolio() {
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Button>
-            </Link>
-            <Link href="mailto:tomasferrer_web@hotmail.com">
+            </Link>*/}
+            <Link href="mailto:vexo.contact.dev@gmail.com">
               <Button
                 variant="ghost"
                 size="icon"
@@ -430,7 +432,7 @@ export default function Portfolio() {
                 <span className="sr-only">WhatsApp</span>
               </Button>
             </Link>
-            <Link href="https://instagram.com/ferrer_tomas" target="_blank" rel="noopener noreferrer">
+            <Link href="https://instagram.com/vexo.ar" target="_blank" rel="noopener noreferrer">
               <Button
                 variant="ghost"
                 size="icon"
